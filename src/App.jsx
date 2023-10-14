@@ -1,4 +1,4 @@
-import { Switch, Route, Link } from "react-router-dom";
+import { Routes , Route, Link } from "react-router-dom";
 import { Layout, Typography, Space } from "antd";
 
 import {
@@ -19,7 +19,7 @@ const App = () => (
     <div className="main">
       <Layout>
         <div className="routes">
-          <Switch>
+          <Routes>
             <Route exact path="/">
               <Homepage />
             </Route>
@@ -35,7 +35,7 @@ const App = () => (
             <Route exact path="/news">
               <News />
             </Route>
-          </Switch>
+          </Routes>
         </div>
       </Layout>
       <div className="footer">
