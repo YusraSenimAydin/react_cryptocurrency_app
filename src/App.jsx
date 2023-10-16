@@ -1,4 +1,4 @@
-import { Routes , Route, Link } from "react-router-dom";
+import { BrowserRouter as   Routes , Route, Link } from "react-router-dom";
 import { Layout, Typography, Space } from "antd";
 
 import {
@@ -19,6 +19,7 @@ const App = () => (
     <div className="main">
       <Layout>
         <div className="routes">
+          
           <Routes>
             <Route exact path="/">
               <Homepage />
